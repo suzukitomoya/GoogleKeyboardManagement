@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "GoogleKeyboardNavigation",
+    "description": "google検索結果をキーボードで操作するやつ",
+    "version": "0.2",
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.co.jp/search*"],
+            "js": ["js/jquery-2.1.4.min.js", "js/script.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
